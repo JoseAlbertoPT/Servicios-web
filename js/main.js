@@ -1,6 +1,5 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Scroll reveal animations
 const revealEls = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window && revealEls.length) {
@@ -21,7 +20,7 @@ if ("IntersectionObserver" in window && revealEls.length) {
   revealEls.forEach((el) => el.classList.add("is-visible"));
 }
 
-// Mobile nav toggle
+
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
 
@@ -37,14 +36,12 @@ navLinks.querySelectorAll("a").forEach((link) => {
   });
 });
 
-// Header shadow on scroll
 const siteHeader = document.getElementById("siteHeader");
 
 window.addEventListener("scroll", () => {
   siteHeader.classList.toggle("is-scrolled", window.scrollY > 8);
 });
 
-// Scrollspy: highlight the nav link matching the section in view
 const navAnchors = document.querySelectorAll("[data-nav-link]");
 const spySections = [...navAnchors]
   .map((link) => document.querySelector(link.getAttribute("href")))
