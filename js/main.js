@@ -66,3 +66,28 @@ if ("IntersectionObserver" in window && spySections.length) {
   spySections.forEach((section) => spyObserver.observe(section));
 }
 
+const servicesMock = document.getElementById("servicesMock");
+
+if (servicesMock) {
+  const mockSlides = servicesMock.querySelectorAll("[data-mock-slide]");
+  const mockTitle = servicesMock.querySelector("[data-mock-title]");
+  const rotateInterval = Number(servicesMock.dataset.rotateInterval) || 300000;
+  let activeMockIndex = 0;
+
+  const showMockSlide = (index) => {
+    mockSlides.forEach((slide, i) => {
+      slide.classList.toggle("is-active", i === index);
+    });
+    if (mockTitle) {
+      mockTitle.textContent = mockSlides[index].dataset.mockTitle || "";
+    }
+  };
+
+  if (mockSlides.length > 1) {
+    setInterval(() => {
+      activeMockIndex = (activeMockIndex + 1) % mockSlides.length;
+      showMockSlide(activeMockIndex);
+    }, rotateInterval);
+  }
+}
+

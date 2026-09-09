@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>José Alberto Pérez Torres — Desarrollador Web & Estudiante de Informática</title>
   <meta name="description" content="Desarrollador web freelance y estudiante de Licenciatura en Informática. Sistemas administrativos (ABM/CRUD), UX/UI y desarrollo web." />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="theme-color" content="#0a0c10" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
 </head>
 <body>
 
@@ -59,6 +63,11 @@
           </a>
           <a href="#contacto" class="btn btn-secondary">Hablemos de tu proyecto</a>
         </div>
+        <ul class="hero-tags hero-anim" style="--anim-delay: 0.6s">
+          <li>Lic. en Informática</li>
+          <li>Freelance desde 2022</li>
+          <li>100% remoto</li>
+        </ul>
       </div>
     </section>
     
@@ -162,7 +171,7 @@
       </div>
     </section>
 
-    <!-- SERVICIOS -->
+
     <section id="servicios" class="section">
       <div class="container">
         <h2 class="section-title reveal">Servicios</h2>
@@ -185,15 +194,15 @@
 
               <div class="highlights-grid">
                 <div class="highlight-card reveal reveal-delay-1">
-                  <p class="highlight-label">Desarrollo web</p>
+                  <p class="highlight-label">Desarrollo Web</p>
                   <p class="highlight-desc">Sitios responsivos y rápidos, con buenas prácticas de UX/UI y adaptados a tu marca.</p>
                 </div>
                 <div class="highlight-card reveal reveal-delay-2">
-                  <p class="highlight-label">Sistemas administrativos</p>
+                  <p class="highlight-label">Sistemas Administrativos</p>
                   <p class="highlight-desc">Plataformas ABM/CRUD para gestionar productos, clientes, ventas e inventario.</p>
                 </div>
                 <div class="highlight-card reveal reveal-delay-3">
-                  <p class="highlight-label">Mantenimiento y soporte</p>
+                  <p class="highlight-label">Mantenimiento y Soporte</p>
                   <p class="highlight-desc">Actualizaciones, mejoras y acompañamiento continuo una vez lanzado tu proyecto.</p>
                 </div>
               </div>
@@ -203,18 +212,90 @@
                 <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
               </a>
             </div>
+
+            <div class="glass-visual reveal reveal-delay-2">
+              <div class="browser-mock" id="servicesMock" data-rotate-interval="10000">
+                <div class="browser-mock-bar">
+                  <span class="browser-dot browser-dot-red"></span>
+                  <span class="browser-dot browser-dot-yellow"></span>
+                  <span class="browser-dot browser-dot-green"></span>
+                  <span class="browser-mock-title" data-mock-title>desarrollo.js</span>
+                </div>
+                <div class="browser-mock-body">
+                  <div class="mock-slide is-active" data-mock-slide data-mock-title="desarrollo.js">
+                    <div class="code-line code-line-accent" style="width: 38%;"></div>
+                    <div class="code-line" style="width: 82%;"></div>
+                    <div class="code-line" style="width: 64%;"></div>
+                    <div class="code-line code-line-accent-2" style="width: 30%; margin-left: 24px;"></div>
+                    <div class="code-line" style="width: 70%; margin-left: 24px;"></div>
+                    <div class="code-line" style="width: 52%; margin-left: 24px;"></div>
+                    <div class="code-line" style="width: 45%;"></div>
+                    <div class="code-line code-line-accent-3" style="width: 22%;"></div>
+                  </div>
+
+                  <div class="mock-slide" data-mock-slide data-mock-title="sistema-abm.php">
+                    <div class="mock-row">
+                      <span class="mock-row-icon" style="background: linear-gradient(135deg, #3b82f6, #60a5fa);"></span>
+                      <div class="mock-row-lines">
+                        <div class="code-line" style="width: 58%;"></div>
+                        <div class="code-line code-line-muted" style="width: 32%;"></div>
+                      </div>
+                    </div>
+                    <div class="mock-row">
+                      <span class="mock-row-icon" style="background: linear-gradient(135deg, #a855f7, #7c3aed);"></span>
+                      <div class="mock-row-lines">
+                        <div class="code-line" style="width: 70%;"></div>
+                        <div class="code-line code-line-muted" style="width: 26%;"></div>
+                      </div>
+                    </div>
+                    <div class="mock-row">
+                      <span class="mock-row-icon" style="background: linear-gradient(135deg, #34d399, #10b981);"></span>
+                      <div class="mock-row-lines">
+                        <div class="code-line" style="width: 48%;"></div>
+                        <div class="code-line code-line-muted" style="width: 38%;"></div>
+                      </div>
+                    </div>
+                    <div class="mock-row">
+                      <span class="mock-row-icon" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);"></span>
+                      <div class="mock-row-lines">
+                        <div class="code-line" style="width: 62%;"></div>
+                        <div class="code-line code-line-muted" style="width: 30%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mock-slide" data-mock-slide data-mock-title="soporte.md">
+                    <div class="mock-check-item">
+                      <span class="mock-check-icon">✓</span>
+                      <div class="code-line" style="width: 66%;"></div>
+                    </div>
+                    <div class="mock-check-item">
+                      <span class="mock-check-icon">✓</span>
+                      <div class="code-line" style="width: 50%;"></div>
+                    </div>
+                    <div class="mock-check-item">
+                      <span class="mock-check-icon">✓</span>
+                      <div class="code-line" style="width: 74%;"></div>
+                    </div>
+                    <div class="mock-check-item">
+                      <span class="mock-check-icon is-pending">…</span>
+                      <div class="code-line code-line-muted" style="width: 40%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TRAYECTORIA -->
     <section id="trayectoria" class="section">
       <div class="container">
         <h2 class="section-title reveal">Trayectoria</h2>
         <p class="section-subtitle reveal">Experiencia laboral y formación académica.</p>
 
-        <h3 class="timeline-title reveal">Experiencia laboral</h3>
+        <h3 class="timeline-title reveal">Experiencia Laboral</h3>
         <ol class="timeline">
           <li class="timeline-item reveal reveal-delay-1">
             <span class="timeline-date">Julio 2025 – Enero 2026</span>
@@ -262,7 +343,7 @@
           </li>
         </ol>
 
-        <h3 class="timeline-title timeline-title-spaced reveal">Cursos y formación complementaria</h3>
+        <h3 class="timeline-title timeline-title-spaced reveal">Cursos y Formación complementaria</h3>
         <div class="skills-grid">
           <div class="skill-card reveal reveal-delay-1">
             <p class="highlight-label">Cisco Networking Academy</p>
@@ -274,6 +355,7 @@
               <li>Dispositivos de Red · 2023</li>
             </ul>
           </div>
+
           <div class="skill-card reveal reveal-delay-2">
             <p class="highlight-label">IBM SkillsBuild</p>
             <ul class="tech-tags">
@@ -350,13 +432,10 @@
         </div>
       </div>
     </section>
-
-    <!-- CASOS DE EXITO -->
     <section id="casos-exito" class="section">
       <div class="container">
-        <h2 class="section-title reveal">Casos de éxito</h2>
+        <h2 class="section-title reveal">Casos de Éxito</h2>
         <p class="section-subtitle reveal">Proyectos reales donde aporté soluciones concretas.</p>
-
         <div class="projects-grid">
           <article class="project-card" style="--card-gradient: linear-gradient(135deg, #22c55e, #16a34a); --card-shadow: rgba(34, 197, 94, 0.45);">
             <div class="project-card-icon" aria-hidden="true">
@@ -408,7 +487,7 @@
         </div>
 
         <p class="projects-note">
-          * Casos basados en proyectos reales desarrollados de forma freelance e
+           Casos basados en proyectos reales desarrollados de forma freelance e
           independiente.
         </p>
       </div>
@@ -538,7 +617,7 @@
         </div>
 
         <p class="projects-note">
-          * Por confidencialidad y seguridad de mis clientes, el resto de los
+          Por confidencialidad y seguridad de mis clientes, el resto de los
           sistemas y sitios web que he desarrollado no son de acceso público.
         </p>
 
@@ -591,17 +670,6 @@
             </span>
           </a>
 
-          <div
-            class="connect-card connect-card-static reveal reveal-delay-3"
-            style="--card-gradient: linear-gradient(135deg, #f59e0b, #d97706); --card-shadow: rgba(245, 158, 11, 0.5);"
-          >
-            <div class="connect-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h3>Ubicación</h3>
-            <p>Calle Francisco Cortés #43, Tres Marías, Mor. Méx.</p>
-          </div>
-
           <a
             class="connect-card reveal reveal-delay-3"
             href="https://github.com/JoseAlbertoPT"
@@ -625,11 +693,20 @@
   </main>
 
   <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-mark">AP</span>
+        <div>
+          <p class="footer-name">Alberto Pérez</p>
+          <p class="footer-tagline">Desarrollador Web · Sistemas a la medida</p>
+        </div>
+      </div>
+    </div>
     <div class="container">
-      <p>&copy; <span id="year"></span> Alberto Pérez. Todos los derechos reservados.</p>
+      <p class="footer-copy">&copy; <span id="year"></span> Alberto Pérez. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>
